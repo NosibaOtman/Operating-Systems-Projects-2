@@ -1,0 +1,51 @@
+nosiba, yousefak
+nosiba otman (212378111) , yousef abugosh (315177444)
+EX: 2
+
+FILES:
+README--  this file.
+Makefile
+jmp.h
+jmp.cpp
+scheduler.cpp
+scheduler.h
+uthreads.cpp
+
+REMARKS:
+
+ANSWERS:
+
+Q1:
+a. sigsetjmp saves the current location, CPU state and signal mask
+   siglongjmp goes to the saved location, restoring the state and the signal mask
+b. if specified sigsetjmp can save the signal mask so it will be restored when 
+   siglongjmp is called else signal mask will not be effected
+
+Q2: 
+in Whatsapp app when joining chat group and recieving messages, 
+the app need to display the messages from multiple users simultaneously with 
+as least delays as possible, for that user-level threads are very usefull
+because they are light weighted and can be managed by the app (whatsapp) to 
+display many messages at once to the user with cheap switching cost
+
+Q3:
+Advantages of Chrome creating a new process for each tab:
+1-Better isolation: Each tab runs in a separate process, which provides better isolation between tabs and prevents one tab from affecting another.
+2-Improved security: Separate processes for each tab enhance security by limiting the damage that can be caused by malware or malicious web content.
+3-Better resource management: Processes can be managed separately,
+4-Improved scalability: Chrome can create new processes for new tabs, which allows the browser to scale better as the number of tabs increases.
+
+Disadvantages of Chrome creating a new process for each tab:
+1-Increased memory usage: Creating a new process for each tab can increase memory usage.
+2-Higher startup time: Creating multiple processes can lead to increased startup time for the browser.
+3-Increased complexity: Managing multiple processes can add to the complexity of the system.
+4-Higher overhead: Creating and managing multiple processes can add to the overhead of the system.
+
+Q4:
+The OS recieves an interrupt from the keyboard that an "enter" is pressed then it startes the process that is called from the shell
+by the command "kill pid" which sends SIGTERM signal to the Showtwell application that askes the application to termenate.
+
+
+Q5: 
+Real time refers to the actual passage of time in the physical world, 
+Virtual time is the predifined time allocated to the thread for running state
